@@ -8836,7 +8836,7 @@ body .theme-btn-fourteen:hover {background: #6F6CFF;}
   width: 118px;
   height: 118px;
   border-radius: 50%;
-  background: #75F1D5;
+  background: #rgba(1);
   top: -59px;
   right: -48px;
   z-index: 1;
