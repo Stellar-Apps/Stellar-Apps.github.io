@@ -330,8 +330,8 @@
               </p>
 
               <div class="d-flex justify-content-center">
-                <form action="#">
-                  <input type="email" placeholder="you@work.com" />
+                <form onsubmit="return buttonpress();"> 
+                  <input id= "emailinput" type="email" placeholder="you@work.com" />
                   <button>coming soon</button>
                 </form>
               </div>
@@ -975,7 +975,17 @@
 
       <!-- Theme js -->
       <script src="js/theme.js"></script>
+      <script> 
+      function buttonpress(){
+        const emailInput = document.getElementById("emailinput"); 
+        const emailValue = emailInput.value;
+
+        const url = `https://script.google.com/macros/s/AKfycbyxSt7AO7UiMpk8WuBcq-Y896gqJ0RZpsheglaQpZws0uRLlt0iBaecG10ucluMjpq1/exec`
+        $.post(url, { "Name": "Angela", "Email": emailValue, "Message": "hello2" });
+      }
+        </script>
     </div>
     <!-- /.main-page-wrapper -->
   </body>
 </html>
+
